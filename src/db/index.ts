@@ -27,7 +27,7 @@ class Database {
 		try {
 			await migrate({ client }, path.resolve(__dirname, 'migrations/sql'))
     } catch (err) {
-      console.error('migation failes', err)
+      console.error('migration failes', err)
     } finally {
 			client.release()
 		}
